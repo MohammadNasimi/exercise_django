@@ -5,7 +5,10 @@
 <ul>
 
 {% for post in all_posts_list %}
-<li>{{post.text}}<li>
+    <div class="post-entry">
+        <h1><a href="{% url 'detail' post.id %}">{{ post.title }}</a></h1>
+        <p>{{ post.body }}</p>
+    </div>
 {% endfor %}
 
 <ul>
