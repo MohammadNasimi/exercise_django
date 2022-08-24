@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView ,ListView,DetailView
+from django.views.generic import TemplateView ,ListView,DetailView,CreateView ,UpdateView
 from blog.models import blog
 # Create your views here.
 # from django.http import HttpResponse
@@ -18,3 +18,13 @@ class blogDetail(DetailView):
     model = blog
     template_name = 'pages/detail.html'
     context_object_name = 'Detail_post'
+    
+class blogcreate(CreateView):
+    model = blog
+    template_name = 'pages/create.html'
+    fields = [ 'title','author','body']
+    
+class BlogUpdateView(UpdateView): 
+    model = blog
+    template_name = 'pages/update.html'
+    fields = ['title', 'body']

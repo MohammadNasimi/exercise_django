@@ -4,5 +4,8 @@
 <div class="post-entry">
     <h2>{{ Detail_post.title }}</h2>
     <p>{{ Detail_post.body }}</p>
+    <p>{{ Detail_post.id }}</p>
+
 </div>
+<a href="{% url 'post_edit' Detail_post.id %}">+ Edit Blog Post</a>
 {% endblock content %}
