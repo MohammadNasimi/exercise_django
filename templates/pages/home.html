@@ -3,7 +3,9 @@
 {% block content %}
 <h1>Homepage</h1>
 <ul>
-
+    <div class="nav-right">
+        <h1><a href="{% url 'create_blog' %}">+ New Blog Post</a><h1>
+    </div>
 {% for post in all_posts_list %}
     <div class="post-entry">
         <h1><a href="{% url 'detail' post.id %}">{{ post.title }}</a></h1>
