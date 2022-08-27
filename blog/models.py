@@ -1,13 +1,13 @@
 import imp
 from django.db import models
-from django.contrib.auth.models import User
+from accounts.models import CustomerUser
 from django.urls import reverse
 # Create your models here.
 from django.db import models
 class blog(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey(
-        User,
+        CustomerUser,
         on_delete=models.CASCADE,
         )
     body = models.TextField()

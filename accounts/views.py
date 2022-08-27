@@ -9,3 +9,6 @@ class SignUpView(CreateView):
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('login')
     
+    
+# from django.conf import settings
+# User = settings.AUTH_USER_MODEL
