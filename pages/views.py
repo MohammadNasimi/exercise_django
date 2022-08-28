@@ -6,10 +6,10 @@ from blog.models import blog
 # def homePageView(request):
 #     return HttpResponse('Hello, World!')
 from django.urls import reverse_lazy
-class homePageView(ListView):
-    model = blog
-    template_name = 'pages/home.html'
-    context_object_name = 'all_posts_list'
+class homePageView(TemplateView):
+    # model = blog
+    template_name = 'home_user.html'
+    # context_object_name = 'all_posts_list'
 
 class aboutpageview(TemplateView):
     template_name = 'pages/about.html'
