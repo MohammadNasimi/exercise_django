@@ -40,6 +40,8 @@ initial-scale=1, shrink-to-fit=no">
         aria-labelledby="navbarDropdown">
         <a class="dropdown-item"
         href="{% url 'password_change'%}">Change password</a>
+        <a class="dropdown-item" href="{% url 'bloglist' %}">All Articles</a>
+        <a href="{% url 'blog_new' %}">+ New</a>
 
 <div class="dropdown-divider"></div>
 <a class="dropdown-item" href="{% url 'logout' %}">
