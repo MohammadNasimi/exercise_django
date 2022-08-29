@@ -16,6 +16,16 @@
     <a href="{% url 'blog_delete' article.pk %}">Delete</a>
     </div>
 </div>
+<div class="card-footer">
+    {% for comment in article.comments.all %}
+    <p>
+    <span class="font-weight-bold">
+    {{ comment.author }} &middot;
+    </span>
+    {{ comment }}
+    </p>
+    {% endfor %}
+    </div>
 <br/>
 {% endfor %}
 {% endblock content %}
