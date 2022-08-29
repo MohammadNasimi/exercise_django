@@ -31,21 +31,24 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     # 'whitenoise.runserver_nostatic',
     'pages',
     'posts',
     'blog',
     'accounts',
     #######################
-    'rest_framework',
+
     # 'crispy_forms',
-    'books'
+    'books',
+    
 ]
 TIME_ZONE = 'Iran/Tehran'
 MIDDLEWARE = [
