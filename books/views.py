@@ -7,3 +7,8 @@ from books.serializers import BookSerializer
 class BookAPIView(generics.ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    
+class BookApiViewDetail(generics.RetrieveAPIView):
+    queryset = Book.objects.all()
+    serialzer_class = BookSerializer
+    

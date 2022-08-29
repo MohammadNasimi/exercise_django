@@ -50,6 +50,13 @@ INSTALLED_APPS = [
     'books',
     
 ]
+
+REST_FRAMEWORK = {
+'DEFAULT_PERMISSION_CLASSES': [
+'rest_framework.permissions.AllowAny',
+]
+}
+
 TIME_ZONE = 'Iran/Tehran'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
