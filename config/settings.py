@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'pages',
     'posts',
     'blog',
-    'accounts'
+    'accounts',
     #######################
+    'rest_framework',
     # 'crispy_forms',
+    'books'
 ]
 TIME_ZONE = 'Iran/Tehran'
 MIDDLEWARE = [
